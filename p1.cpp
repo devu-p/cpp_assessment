@@ -30,8 +30,9 @@ public:
     void getMenu() 
     {
         int number;
-        cout << "Please Enter Your Choice: ";
+        cout << "Please Enter Your choice: ";
         cin >> number;
+        
         switch (number) 
         {
             case 1:
@@ -97,6 +98,9 @@ public:
             case 3:
                 price = 200;
                 break;
+            default:
+            cout<<"you entered invalid choice";
+
         }
 
         // Display bill
@@ -112,12 +116,11 @@ public:
         cin >> cont;
 
 
-            if (cont != 'y') 
-            
+            if (!(cont =='Y' || cont == 'y')) 
             {
                 break;
             }
-
+            
     }
     }
 };
